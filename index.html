@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = Number(prompt("Nhap so muon kiem tra"));
+    checkSo();
+
+    function checkSo() {
+       if (num===2){
+           alert("day la so nguyen to")
+       }else{
+           for (let i = 2;i<1000;i++){
+               if (num%i===0){
+                   alert(num+"khong phai la so nguyen to");
+                   break;
+               }else {
+                   alert(num+" la so nguyen to")
+                   break;
+               }
+           }
+
+       }
+
+    }
+
+</script>
+</body>
+</html>
